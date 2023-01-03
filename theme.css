@@ -14,7 +14,7 @@ html, body{
     background-position: 50% 60%;
     background-attachment: scroll;
     background-size: cover;
-    height: 40vh;
+    height: 80vh;/* 40vh; */
     margin: 0;
     padding-top: 60vh;
 }
@@ -25,6 +25,7 @@ html, body{
     font-size: 6em;
     font-weight: normal;
     text-shadow: 0 0 10px #000;
+    text-align: center;
 }
 .heading-subtext{
     color: #fff;
@@ -66,6 +67,7 @@ html, body{
     font-family: 'Caveat', cursive;
     font-size: 3em;
     margin-top: 2em;
+    text-align: center;
 }
 .details{
     margin: 0 auto 8em;
