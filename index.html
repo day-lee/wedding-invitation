@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Jack & Dayeon's Wedding</title>
+    <!-- meta -->
+    <meta property="og:url" content="https://day-lee.github.io/wedding-invitation/">
+    <meta property="og:title" content="Jack & Dayeon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/hero.jpeg">
+    <meta property="og:description" content="Request the honor of your presence at the wedding">
+    <title>Jack & Dayeon</title>
     <link rel="icon" href="img/heart.png">
     <link rel="stylesheet" type="text/css" href="theme.css">
     <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css">
@@ -16,7 +22,8 @@
 
     <!--  Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <!--  Font Awesome -->
     <!-- <script src="https://kit.fontawesome.com/567b8330e2.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/1754e001d0.js" crossorigin="anonymous"></script>
@@ -85,6 +92,16 @@
     outline: none;
     box-shadow: none;}
 
+
+.sunwoongak {
+  color: #000;
+  text-decoration : underline;
+}
+
+.test-btn {
+  color: red;
+}
+
 </style>
 
 <div class="user-wrap">
@@ -93,7 +110,7 @@
 
     <h1 class="heading">
       Jack & Dayeon
-      <span class="heading-subtext"> are getting married!</span>
+      <!-- <span class="heading-subtext"> are getting married!</span> -->
     </h1>
 
 
@@ -103,13 +120,6 @@
 
     <!-- <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a> -->
     <section class="section">
-
-      <p>
-        Church wedding debt celebrate macarena embarrassing glitter  Will.
-         Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib,
-          guitar acoustic bass photobooth photographer limousine sparkles.
-      </p>
-
 
       <h2 class="sub-heading">Ngo-Lee Wedding Invitation</h2>
       <!-- <div class="rsvp">
@@ -128,6 +138,9 @@
 <div class="row btn-close">
   <div class="col-sm-6 rsvp-col">
       <button type="button" class="btn btn-outline-dark rsvp-button" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WILL ATTEND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+<!-- <button type="button" class="test-btn" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> -->
+
       <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -141,23 +154,23 @@
             <div class="modal-body">
               <form name="submit-to-google-sheet">
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">NAME</label>
-                  <input type="text" name="Name" placeholder="Tell me your name please!" class="form-control" id="recipient-name">
+                  <!-- <label for="recipient-name" class="col-form-label">NAME</label> -->
+                  <input type="text" name="Name" placeholder="Your name" class="form-control" id="recipient-name">
                 </div>
                   <input type="hidden" name="Attending_yn" class="form-control" value="Y">
 
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">PLUS ONE</label>
-                  <input type="text" name="Plus_one" placeholder="Type 'Y' or 'N'" class="form-control" id="recipient-name">
+                  <!-- <label for="recipient-name" class="col-form-label">PLUS ONE</label> -->
+                  <input type="text" name="Plus_one" placeholder="Bring a guest? Type Y or N" class="form-control" id="recipient-name">
                 </div>
 
                 <div class="form-group">
-                  <label for="message-text" class="col-form-label">EMAIL</label>
-                  <input type="text" name="Email" placeholder="What is your email address?" class="form-control" id="recipient-name">
+                  <!-- <label for="message-text" class="col-form-label">EMAIL</label> -->
+                  <input type="text" name="Email" placeholder="Your Email" class="form-control" id="recipient-name">
                 </div>
 
                 <div class="form-group">
-                  <label for="message-text" class="col-form-label">MESSAGE</label>
+                  <!-- <label for="message-text" class="col-form-label">MESSAGE</label> -->
                   <textarea class="form-control" name="Message"  placeholder="Is there anything you want to say?" id="message-text"></textarea>
                 </div>
 
@@ -191,20 +204,21 @@
 
             <form name="submit-to-google-sheet-n">
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">NAME</label>
-                <input type="text" name="Name" placeholder="Tell me your name please!" class="form-control">
+                <!-- <label for="recipient-name" class="col-form-label">NAME</label> -->
+                <input type="text" name="Name" placeholder="Your name" class="form-control">
               </div>
 
                 <input type="hidden" name="Attending_yn" class="form-control" value="N">
                 <input type="hidden" name="Plus_one" class="form-control" value="N">
+                <input type="hidden" name="Email" class="form-control" value="N">
 
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">EMAIL</label>
+              <!-- <div class="form-group">
+               <label for="message-text" class="col-form-label">EMAIL</label>
               <input type="text" name="Email" placeholder="What is your email address?" class="form-control" >
-              </div>
+              </div> -->
 
               <div class="form-group">
-                <label for="message-text" class="col-form-label">MESSAGE</label>
+                <!-- <label for="message-text" class="col-form-label">MESSAGE</label> -->
                 <textarea class="form-control" name="Message" placeholder="Is there anything you want to say?"  id="message-text"></textarea>
               </div>
 
@@ -236,26 +250,26 @@
 
 
     </section>
-    <section class="section">
+    <section class="section-2">
       <h2 class="sub-heading">The Details</h2>
       <br>
         <p>Please do let us know if we can help with anything while you are here.</p>
       <br>
       <div class="details">
         <i class="fa-solid fa-heart"></i>
-        <h4 class="details-heading">HOSTED BY</h4>
+        <h5 class="details-heading">HOSTED BY</h5>
         <p>Dayeon & Jack</p>
       </div>
       <div class="details">
         <i class="fa-regular fa-calendar-check"></i>
-        <h4 class="details-heading">DATE</h4>
+        <h5 class="details-heading">DATE</h5>
         <p>April 21, 2023</p>
         <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow"></a>
       </div>
       <div class="details">
         <i class="fa-regular fa-map"></i>
-        <h4 class="details-heading">VENUE</h4>
-        <p><a rel="noopener" href="https://www.instagram.com/sunwoongak_official/" target='_blank' >Sunwoongak</a>, Seoul, Korea</p>
+        <h5 class="details-heading">VENUE</h5>
+        <p><a rel="noopener" href="https://www.instagram.com/sunwoongak_official/" target='_blank'class="sunwoongak" >Sunwoongak</a>, Seoul, Korea</p>
         <img class="resort-image" src="./img/swg.jpg" alt="sunwoongak" />
         <br><br>
         <h5>PUBLIC TRANSPORT</h5>
@@ -266,13 +280,16 @@
 
       <div class="details">
         <i class="fa-solid fa-plane-departure"></i>
-        <h4 class="details-heading">Flights</h4>
+        <h5 class="details-heading">Flights</h5>
         <p>Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena.</p>
-        <p>Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
       </div>
+
+
+</section>
+    <section class="section-ceremony">
       <div class="details">
         <i class="fa-solid fa-asterisk"></i>
-        <h4 class="details-heading">WEDDING CEREMONY</h4>
+        <h5 class="details-heading">WEDDING CEREMONY</h5>
         <p>To Be Continued..!</p>
 
       </div>
@@ -399,12 +416,13 @@
 </div>  -->
 
 </div>
-
+    </section>
+    <section class="section-footer">
 <hr>
 
 <footer>
       <p>
-        Hand-crafted with <i class="fa-regular fa-face-kiss-wink-heart"></i> <i class="fa-solid fa-heart"></i> </span> by DAYEON 2023
+        Hand-crafted with <i class="fa-regular fa-face-kiss-wink-heart"></i> <i class="fa-solid fa-heart"></i> </span> by DAYEON
       </p>
     </footer>
 
@@ -436,24 +454,37 @@
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           // .then(response => console.log('Success!', response))
-          // .then(alert("Thank you for comming!"))
+          .then(alert("Thank you for comming!"))
           // .then(swal("Thank you", "See you at the wedding :)", "success"))
-          .then(swal({
-                      title: "Thank you!",
-                      text: "See you at the wedding :)"
-                    }))
-
+          // .then(swal({
+          //             title: "Thank you!",
+          //             text: "See you at the wedding :)",
+          //             button: false
+          //           }))
+          .then(  setTimeout(() => {
+                     console.log("Delayed for 2 second.")
+                   }, 4000))
+          .then(location.replace("https://day-lee.github.io/wedding-invitation/"))
           // timeout would be nice...
            // .then(location.replace("https://day-lee.github.io/wedding-invitation/"))
           .catch(error => console.error('Error!', error.message))
+
+          // location.replace("https://day-lee.github.io/wedding-invitation/")
+
+
       })
 
       formNot.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(formNot)})
-          .then(swal("Thank you!"))
-          // .then(location.replace("https://day-lee.github.io/wedding-invitation/"))
-          .catch(error => console.error('Error!', error.message))
+        .then(alert("Thank you!"))
+        // .then(swal({
+        //             title: "",
+        //             text: " Thank you :)",
+        //             button: false
+        //           }))
+        .then(location.replace("https://day-lee.github.io/wedding-invitation/"))
+        .catch(error => console.error('Error!', error.message))
       })
 
 
