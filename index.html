@@ -146,12 +146,19 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    /* border: 1px solid transparent; */
+    border: 2px solid;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    /* border-radius: 0.25rem; */
+    border-radius: 0rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-rsvp:focus-visible {
+  outline: 2px black;
+  border-radius: 0%;
+}
+.btn-outline-dark.focus, .btn-outline-dark:focus, .btn-outline-dark.focus-visible, .btn-outline-dark:focus-visible {
+    box-shadow: 0 0 0 0.2rem #fff;
 }
 
 
@@ -439,10 +446,21 @@
       var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
       var options = { //지도를 생성할 때 필요한 기본 옵션
       	center: new kakao.maps.LatLng(37.65570870, 126.999852), //지도의 중심좌표.
-      	level: 3 //지도의 레벨(확대, 축소 정도)
+      	level: 6 //지도의 레벨(확대, 축소 정도)
       };
 
       var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+            // 마커가 표시될 위치입니다
+      var markerPosition  = new kakao.maps.LatLng(37.65570870, 126.999852);
+
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+          position: markerPosition
+      });
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
 </script>
   </body>
 </html>
