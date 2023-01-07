@@ -9,10 +9,10 @@ html, body{
     text-align: center;
     scroll-behavior: smooth;
 }
-body{
-    /* ios no scrolable*/
+/* body{
+    /* ios no scrolable
     touch-action: pan-x pan-y;
-}
+} */
 h5 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
