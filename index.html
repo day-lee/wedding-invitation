@@ -195,7 +195,7 @@
 <section class="section-detail">
   <div class="details" style="max-width: 350px;">
     <i class="fa-solid fa-quote-left"></i><br><br>
-    <span>Hi Wedding vitation is easy to make </span><br>
+    <span>JS Hi Wedding vitation is easy to make </span><br>
     <span>Wedding nvitation Grape dinner delicious</span><br>
     <span>Wedding vitation is ready here for you </span><br>
     <span>Wedding nvitation Grape dinner delicious</span><br><br>
@@ -772,8 +772,8 @@
           position: markerPosition
       });
 
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
 //copy to clipboard
       let text1 = document.getElementById('dadAccount').innerHTML;
       let text2 = document.getElementById('myAccount').innerHTML;
@@ -795,6 +795,22 @@ marker.setMap(map);
           console.error('Failed to copy: ', err);
         }
       }
+
+// no scalable
+      document.documentElement.addEventListener('touchstart', function (event) {
+           if (event.touches.length > 1) {
+                event.preventDefault();
+              }
+          }, false);
+
+      var lastTouchEnd = 0;
+
+      document.documentElement.addEventListener('touchend', function (event) {
+           var now = (new Date()).getTime();
+           if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+              } lastTouchEnd = now;
+          }, false);
 
 
 </script>
