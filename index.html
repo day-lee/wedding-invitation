@@ -15,6 +15,7 @@
 
     <!--  CSS Stylesheets -->
     <link rel="stylesheet" type="text/css" href="theme.css">
+    <!-- <link rel="stylesheet" type="text/css" href="theme_ko.css"> -->
     <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -22,7 +23,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <!--  Font Awesome -->
     <script src="https://kit.fontawesome.com/1754e001d0.js" crossorigin="anonymous"></script>
 
@@ -96,16 +100,48 @@
 .btn-outline-dark-custom.focus, .btn-outline-dark:focus, .btn-outline-dark.focus-visible, .btn-outline-dark:focus-visible {
     box-shadow: 0 0 0 0.2rem #fff;
 }
+button:focus {
+    outline: 1px none;
+    outline: 5px none;
+}
+
+.corner {
+  outline: 2px solid lightgrey;
+  width: 90vw;
+  height: 52vh;
+  margin: 10px;
+}
+.under-text {
+  /* background-color: white;
+  opacity: 0.5; */
+  /* font: #000; */
+  font-family: 'Source Serif Pro', serif;
+  color: lightgrey;
+  font-size: 1em;
+  width: 380px;
+  height: 70px;
+  padding: 0 5% 5% 5%;
+  margin: auto;
+  text-align: left;
+}
 </style>
 
   <!-- header start -->
   <body>
   <div class="user-wrap">
+
       <header class="header">
-        <h1 class="heading">
+        <!-- <div class="corner">
+        <div> -->
+        <!-- <h1 class="heading"> -->
+          <div class="heading-text">
           Jack & Dayeon
+          </div>
+          <!-- <div class="under-text">
+            We are getting married!
+          <div> -->
           <!-- <span class="heading-subtext"> are getting married!</span> -->
-        </h1>
+        <!-- </h1> -->
       </header>
   </div>
   <!-- header end -->
@@ -295,12 +331,27 @@
   </section>
   <!-- ceremony end -->
 
+  <!-- info start -->
+  <section class="section-info">
+    <i class="fa-regular fa-circle-check"></i>
+    <h5 class="details-heading">INFORMATION</h5>
+        <div class="details" style="text-align: left; max-width: 350px;">
+          <span> ‧ 선운각은 북한산 자락에 위치하여 서울 지역 평균보다 온도가 낮을 수 있습니다.
+                예식이 야외에서 진행되므로 이 점 참고해 주시기 바랍니다. </span><br><br>
+          <span> ‧  The ceremony will start at 5PM with a reception to follow that will conclude by 8PM. Please feel free to leave according to your schedule.
+ </span><br><br>
+          <span> ‧ The venue is connected to the hanok cafe. Please enjoy a cup of coffee with beautiful scenery! </span>
+
+        </div>
+  </section>
+  <!-- info end -->
+
   <!-- footer start -->
   <section class="section-footer">
     <hr>
       <footer>
-        <p>
-          Hand-crafted with <i class="fa-regular fa-face-kiss-wink-heart"></i> <i class="fa-solid fa-heart"></i> </span> by DAYEON
+        <p class="header-size">
+          Hand-crafted with <i class="fa-regular fa-face-kiss-wink-heart"></i> <i class="fa-solid fa-heart"></i> </span> by DAYEON 2023
         </p>
       </footer>
   </section>
@@ -425,10 +476,17 @@
   <section class="section-detail">
     <div class="details" style="max-width: 350px;">
       <i class="fa-solid fa-quote-left"></i><br><br>
-      <span> 선운각은 북한산 자락에 위치하여 </span><br>
-      <span>서울 지역 평균보다 낮을 수 있습니다.</span><br>
-      <span> 예식이 야외에서 진행되므로</span><br>
-      <span> 이 점 참고해 주시기 바랍니다. </span><br><br>
+      <span> 어느 날, 우린 설렘으로 만났습니다. </span><br>
+      <span>그날 이후 우리만의 작은 정원을 준비하며</span><br>
+      <span> 조용히, 때론 요란스럽게</span><br>
+      <span> 희망의 씨앗을 심고 믿음의 물을 주어왔습니다. </span><br>
+      <span> 이제 어지간히 모양새를 갖춘 정원.</span><br>
+      <span> 화려하진 않아도</span><br>
+      <span> 늘 향기가 가득한 정원으로 가꾸어 갈 수 있도록 </span><br>
+      <span> 용기와 격려 부탁드립니다. </span><br>
+
+
+      <br>
       <i class="fa-solid fa-quote-right"></i>
     </div>
   </section>
@@ -551,8 +609,12 @@
     <i class="fa-regular fa-circle-check"></i>
     <h5 class="details-heading">INFORMATION</h5>
         <div class="details" style="text-align: left; max-width: 350px;">
-          <span> ‧ 선운각은 북한산 자락에 위치하여 서울 지역 평균보다 온도가 낮을 수 있습니다.</span><br>
-          <span> ‧ 예식이 야외에서 진행되므로 이 점 참고해 주시기 바랍니다. </span>
+          <span> ‧ 선운각은 북한산 자락에 위치하여 서울 지역 평균보다 온도가 낮을 수 있습니다.
+                예식이 야외에서 진행되므로 이 점 참고해 주시기 바랍니다. </span><br><br>
+          <span> ‧ 1부는 5시에 시작됩니다. 1부 종료 후 식사가 시작되며, 식사 후 2부는 8시에 종료됩니다.
+                일정이 있으신 분들은 식사 후 편하게 일어나시면 됩니다.  </span><br><br>
+          <span> ‧ 예식장이 한옥 카페와 연결되어 있습니다. 여유롭게 도착하셔서 커피 한잔 하시며 예식을 기다리셔도 좋을 것 같습니다. </span>
+
         </div>
   </section>
   <!-- info end -->
@@ -592,8 +654,8 @@
   <section class="section-footer">
     <hr>
       <footer>
-        <p>
-           <i class="fa-solid fa-heart"></i> 을 담아 만들었습니다 </span> by 다연
+        <p class="header-size">
+           <i class="fa-solid fa-heart"></i> 을 담아 만들었습니다 </span> by 다연 2023
         </p>
       </footer>
   </section>

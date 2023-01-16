@@ -1,5 +1,5 @@
 *{
-    /* font-family: 'Quicksand', sans-serif; */
+  /*  font-family: 'Noto Serif KR', serif; korean fonts*/
     font-size: 16px;
     color: #222;
 }
@@ -32,7 +32,7 @@ h5 {
     text-transform: uppercase;
 }
 .fa-radius{
-  border: solid 2px;
+  border: solid 1.7px;
   border-radius: 50%;
   padding: 5px 5px;
 }
@@ -72,7 +72,7 @@ h5 {
     display: block;
 }
 .header{
-    background-image: url(./img/w-main.jpg);
+    background-image: url(./img/main-golden.jpg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-attachment: scroll;
@@ -80,6 +80,9 @@ h5 {
     height: 80vh;/* 40vh; */
     margin: 0 8em 0 8em;
     /* padding-top: 6vh; */
+}
+.header-size{
+    font-size: 13px;
 }
 .heading {
     color: #ffffff;
@@ -245,17 +248,18 @@ h5 {
 
 @media only screen and (max-width: 600px) {
   .header{
-      background-image: url(./img/w-main.jpg);
+      background-image: url(./img/main-golden.jpg);
       background-repeat: no-repeat;
-      background-position: 50% 60%;
+      background-position: 55%;
       background-attachment: scroll;
       background-size: cover;
-      height: 80vh;/* 40vh; */
+      height: 45vh;/* 40vh; */
       margin: 0;
-      /* padding-top: 60vh; */
+      margin: 10px 10px;
+      /* padding-top: 40vh; */
     }
   .heading {
-      font-size: 4em;
+      font-size: 1em;
     }
   .rsvp-col {
       margin-bottom: 10%;
@@ -264,4 +268,17 @@ h5 {
   .section {
       padding: 0px auto 0px auto;
     }
+    .heading-text{
+      /* background-color: white;
+      opacity: 0.5; */
+      /* font: #000; */
+      font-family: 'Source Serif Pro', serif;
+      color: #fff;
+      font-size: 2em;
+      /* width: 170px; */
+      height: 70px;
+      padding: 5%;
+      padding-bottom: 0px;
+      margin: auto;
+    }    
 }
