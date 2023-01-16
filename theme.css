@@ -256,6 +256,7 @@ h5 {
       height: 45vh;/* 40vh; */
       margin: 0;
       margin: 10px 10px;
+
       /* padding-top: 40vh; */
     }
   .heading {
@@ -277,8 +278,9 @@ h5 {
       font-size: 2em;
       /* width: 170px; */
       height: 70px;
-      padding: 5%;
+      padding: 3%;
       padding-bottom: 0px;
       margin: auto;
-    }    
+      text-align: center;
+    }
 }
