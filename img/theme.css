@@ -110,10 +110,6 @@ h5 {
     margin-right: auto;
     background: url(http://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
 }
-.main-img{
-  width: 580px;
-  padding-top: 5%;
-}
 .rsvp {
   text-align: center;
 }
@@ -249,14 +245,10 @@ h5 {
 .test-btn {
   color: red;
 }
-.user-wrap{
-  text-align: center;
-}
 
 @media only screen and (max-width: 600px) {
   .header{
-      /* background-image: url(./img/main-golden.jpg); */
-      background-image: url(./img/r-main-golden.png);
+      background-image: url(./img/main-golden.jpg);
       background-repeat: no-repeat;
       background-position: 55%;
       background-attachment: scroll;
@@ -282,7 +274,7 @@ h5 {
       opacity: 0.5; */
       /* font: #000; */
       font-family: 'Source Serif Pro', serif;
-      color: #000;
+      color: #fff;
       font-size: 2em;
       /* width: 170px; */
       height: 70px;
@@ -290,9 +282,5 @@ h5 {
       padding-bottom: 0px;
       margin: auto;
       text-align: center;
-    }
-    .main-img{
-      width: 350px;
-      padding-top: 5%;
     }
 }
