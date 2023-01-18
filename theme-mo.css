@@ -156,7 +156,7 @@ h5 {
 }
 .section-rsvp{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 1px;
@@ -165,7 +165,7 @@ h5 {
 }
 .section-rsvp-end{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 3.5em;
@@ -174,7 +174,7 @@ h5 {
 }
 .section-1{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 1px;
@@ -183,15 +183,15 @@ h5 {
 }
 .section-2{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 1px;
     text-align: center;
 }
 .section-detail{
-    /* margin: 0 auto;
-    max-width: 600px; */
+    margin: 0 auto;
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 0;
@@ -200,7 +200,7 @@ h5 {
 }
 .section-ceremony{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 1px;
@@ -209,7 +209,7 @@ h5 {
 }
 .section-info{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 0;
@@ -217,7 +217,7 @@ h5 {
 }
 .section-heart{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 3.5em 2.4em 2em;
@@ -226,7 +226,7 @@ h5 {
 }
 .section-footer{
     margin: 0 auto;
-    /* max-width: 600px; */
+    max-width: 600px;
     /* padding-top: 3.5em;
     padding-bottom: 0px; */
     padding: 1px 2.4em 1px;
